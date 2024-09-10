@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_dialog.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialog = 57
+name = "Astrid"
+question = "Conseguimos derrotar o monstro!"
+options = [ {
+"next": 60,
+"text": "Próximo"
+} ]

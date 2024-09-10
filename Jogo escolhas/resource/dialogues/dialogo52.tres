@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_dialog.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialog = 7
+name = "Astrid"
+question = "Ok... "
+options = [ {
+"next": 53,
+"text": "Próximo"
+} ]

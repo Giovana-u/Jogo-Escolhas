@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_dialog.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialog = 8
+name = "Astrid"
+question = "Não achei nada aqui...."
+options = [ {
+"next": 16,
+"text": "Melhor procurar de novo!"
+}, {
+"next": 18,
+"text": "Então vamos para outra sala."
+} ]

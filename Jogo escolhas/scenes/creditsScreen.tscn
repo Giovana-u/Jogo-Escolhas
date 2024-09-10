@@ -1,0 +1,82 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://scripts/creditsScreen.gd" type="Script" id=1]
+[ext_resource path="res://assets/Fontes/city_burn/cityburn-®.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/Fontes/letters_for_learners/Letters for Learners.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 40
+extra_spacing_char = 9
+font_data = ExtResource( 3 )
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=4]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.6, 0.6, 0.6, 0 )
+
+[sub_resource type="Theme" id=7]
+Button/colors/font_color = Color( 0.88, 0.88, 0.88, 1 )
+Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+Button/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_hover = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+Button/styles/disabled = SubResource( 2 )
+Button/styles/focus = SubResource( 3 )
+Button/styles/hover = SubResource( 4 )
+Button/styles/normal = SubResource( 5 )
+Button/styles/pressed = SubResource( 6 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 30
+font_data = ExtResource( 2 )
+
+[node name="creditsScreen" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.458824, 0.266667, 0.266667, 1 )
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -433.0
+margin_top = -167.0
+margin_right = 433.0
+margin_bottom = 167.0
+custom_fonts/font = SubResource( 1 )
+text = "Programadora: Giovana Unfer
+
+Cenário: AnisAous - Top down Pixel Horror Full
+
+Personagem: Skoam - Fumiko Complete Charset"
+align = 1
+autowrap = true
+
+[node name="returnBtn" type="Button" parent="."]
+margin_left = 426.0
+margin_top = 482.0
+margin_right = 613.0
+margin_bottom = 538.0
+theme = SubResource( 7 )
+custom_colors/font_color_hover = Color( 0.698039, 0.027451, 0.027451, 1 )
+custom_colors/font_color_pressed = Color( 0.698039, 0.027451, 0.027451, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Voltar"
+
+[connection signal="pressed" from="returnBtn" to="." method="_on_returnBtn_pressed"]

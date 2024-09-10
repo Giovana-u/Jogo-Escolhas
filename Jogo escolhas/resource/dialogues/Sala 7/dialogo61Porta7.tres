@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://scripts/resource/res_dialog.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+dialog = 5
+name = "Astrid"
+question = "Está bem barulhento nessa porta e tem um sinal bem grande dizendo para não entrar aqui. Eu quero entrar nessa, devo entrar ou não? "
+options = [ {
+"next": -1,
+"text": "Melhor não arriscar."
+}, {
+"next": 36,
+"text": "Sim!"
+} ]
